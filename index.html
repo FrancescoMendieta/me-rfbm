@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rodrigo Bustos - Developer Web</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    color: #111;
+    line-height: 1.6;
+  }
+  header {
+    text-align: center;
+    padding: 80px 20px;
+    background: #111;
+    color: #fff;
+  }
+  header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  header p {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+  .about img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  .about-text {
+    flex: 1;
+  }
+  .about-text h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #111;
+  }
+  .about-text p {
+    font-size: 1.1em;
+    color: #333;
+  }
+  .education, .hobbies, .interests, .socials {
+    margin-top: 50px;
+  }
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #111;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  .education p, .hobbies p {
+    margin-bottom: 10px;
+  }
+  .interests .emoji-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 3.5rem;
+    user-select: none;
+    cursor: default;
+  }
+  .socials .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  .socials a {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    color: #111;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .socials a:hover {
+    color: #555;
+    transform: scale(1.2);
+  }
+  .socials svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #111;
+    color: #fff;
+    margin-top: 50px;
+  }
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-text h2 {
+      font-size: 1.8em;
+    }
+    .interests .emoji-icons {
+      font-size: 3rem;
+      gap: 30px;
+    }
+    .socials .social-icons {
+      gap: 30px;
+    }
+    .socials a {
+      width: 40px;
+      height: 40px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Rodrigo Bustos</h1>
+  <p>Developer Web | Amante de los animales y la creatividad</p>
+</header>
+
+<section class="about">
+  <img src="image.png" alt="Foto de Rodrigo Bustos" />
+  <div class="about-text">
+    <h2>Sobre mí</h2>
+    <p>Hola, soy Rodrigo Bustos, un apasionado developer web. Me encanta crear experiencias digitales limpias, modernas y funcionales. Además de programar, disfruto aprendiendo sobre nuevas tecnologías y compartiendo mi amor por los animales. Creo que la creatividad y la pasión son la clave para construir proyectos increíbles.</p>
+  </div>
+</section>
+
+<section class="education">
+  <h2 class="section-title">Educación</h2>
+  <p><strong>Colegio:</strong> CEILAB</p>
+  <p><strong>Carrera profesional:</strong> Ingeniería de Sistemas en la UPDS</p>
+  <p><strong>Empresa:</strong> CoreDevSystem</p>
+  <p><strong>Empresa:</strong> Creative-Games</p>
+</section>
+
+<section class="hobbies">
+  <h2 class="section-title">Hobbies</h2>
+  <p>Me gusta tocar el violín, aprender cosas nuevas y disfrutar de la naturaleza y los animales, pero sobre todo VIOLINEAR.</p>
+</section>
+
+<section class="interests">
+  <h2 class="section-title">Mis intereses</h2>
+  <div class="emoji-icons" aria-label="Íconos que representan mis intereses">
+    <span title="Desarrollo web" role="img" aria-label="Computadora">💻</span>
+    <span title="Amor por los animales" role="img" aria-label="Huella de animal">🐾</span>
+    <span title="Violinista" role="img" aria-label="Violín">🎻</span>
+    <span title="Aprender tecnología" role="img" aria-label="Bombilla">💡</span>
+    <span title="Naturaleza" role="img" aria-label="Árbol">🌳</span>
+  </div>
+</section>
+
+<section class="socials">
+  <h2 class="section-title">Redes sociales</h2>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/chokitoloquendo1804/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+      <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>Instagram</title>
+        <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/>
+      </svg>
+    </a>
+    <a href="https://www.youtube.com/@Chokito_97" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+      <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>YouTube</title>
+        <path d="M23.498 6.186a2.995 2.995 0 00-2.107-2.11C19.661 3.5 12 3.5 12 3.5s-7.66 0-9.39.577a2.995 2.995 0 00-2.108 2.11A31.13 31.13 0 000 12a31.138 31.138 0 00.502 5.814 2.995 2.995 0 002.108 2.11c1.73.578 9.39.578 9.39.578s7.661 0 9.39-.578a2.995 2.995 0 002.108-2.11A31.138 31.138 0 0024 12a31.13 31.13 0 00-.502-5.814zM9.545 15.568V8.432l6.182 3.568-6.182 3.568z"/>
+      </svg>
+    </a>
+    <a href="https://www.facebook.com/rodrigo.bustos.714" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+      <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>Facebook</title>
+        <path d="M22.675 0h-21.35C.597 0 0 .593 0 1.326v21.348C0 23.405.597 24 1.325 24H12.82v-9.294H9.692V11.24h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.796.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.59l-.467 3.467h-3.123V24h6.116C23.403 24 24 23.405 24 22.674V1.326C24 .593 23.403 0 22.675 0z"/>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/rodrigofrancesco/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+      <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>LinkedIn</title>
+        <path d="M20.447 20.452H17.2v-5.569c0-1.328-.027-3.039-1.852-3.039-1.853 0-2.136 1.445-2.136 2.938v5.67H9.066V9h3.112v1.561h.044c.433-.82 1.493-1.684 3.07-1.684 3.284 0 3.89 2.161 3.89 4.971v6.604zM5.337 7.433a1.81 1.81 0 11.002-3.619 1.81 1.81 0 01-.002 3.619zM6.759 20.452H3.913V9h2.846v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.225.792 24 1.771 24h20.451c.978 0 1.778-.775 1.778-1.729V1.73C24 .774 23.203 0 22.225 0z"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Rodrigo Bustos - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
